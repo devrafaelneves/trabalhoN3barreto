@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+</head>
+<body>
+    <script>
+        let numeroUsuario = parseInt(prompt("escolha entre 1 - 10"))
+        
+        while (numeroUsuario>=0 || numero >10){
+            alert("Não correspondido")
+            numeroUsuario = parseInt(prompt("escolha entre 1 - 10"));
+        }
+        let numeroAleatorio = Math.floor(Math.random()*10) + 1;
+        
+        if (numero==numeroAleatorio){
+            alert("Bom trabalho") 
+        }
+        else{
+            alert("Não correspondido") 
+        }
+
+    </script>
+</body>
+</html>

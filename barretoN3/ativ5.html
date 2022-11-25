@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade5</title>
+</head>
+<body>
+    <script>
+        numero = parseInt(prompt('Qual o numero que deseja descobrir'))
+        
+        parcelas = parseInt(prompt('Quantas parcelas (3x ou 5x)'))
+           
+        if (parcelas==3){
+            amais = numero * 0.1
+            total = numero + amais
+            prestacao = (numero + amais)/3
+            document.write('O valor total final fica: ' + total + '. Prestação mensal fica: ' + prestacao + '.') 
+        }
+        else if (parcelas==5){
+            amais = numero * 0.2
+            total = numero + amais
+            prestacao = (numero + amais)/5
+
+            document.write('O valor total final fica: ' + total + '. Prestação mensal fica: ' + prestacao + '.') 
+            
+        }
+        else{
+
+           document.write('Essa opção só é feita à vista, no caso continua ' + numero + '.') 
+
+        }
+    </script>
+
+</body>
+</html>
